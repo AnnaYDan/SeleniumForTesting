@@ -8,6 +8,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.opera.OperaDriver;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class FirstSeleniumScript {
 
@@ -17,6 +18,8 @@ public class FirstSeleniumScript {
 		System.setProperty("webdriver.edge.driver", "C:/Users/TOSHIBA/Downloads/edgedriver/MicrosoftWebDriver.exe");
 		WebDriver driver = new EdgeDriver();
 		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+		
+		//WebDriverWait wait = new WebDriverWait(driver, 10);
 
 		//System.setProperty("webdriver.opera.driver", "C:/Users/TOSHIBA/Downloads/operadriver_win64/operadriver.exe");
 		//WebDriver driver = new OperaDriver();
