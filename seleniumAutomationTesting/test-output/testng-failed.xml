@@ -3,11 +3,13 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="seleniumCommands.ManageAlerts">
+      <class name="testingFramework.NewTest">
         <methods>
-          <include name="checkPromptWithDismiss"/>
+          <include name="beforeMethod"/>
+          <include name="afterMethod"/>
+          <include name="LogintestWithCorrectCredentials"/>
         </methods>
-      </class> <!-- seleniumCommands.ManageAlerts -->
+      </class> <!-- testingFramework.NewTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

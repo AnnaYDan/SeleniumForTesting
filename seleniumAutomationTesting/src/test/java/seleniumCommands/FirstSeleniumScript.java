@@ -14,15 +14,9 @@ public class FirstSeleniumScript {
 
 	public static void main(String[] args) {
 
-		//WebDriver driver = new ChromeDriver();
-		System.setProperty("webdriver.edge.driver", "C:/Users/TOSHIBA/Downloads/edgedriver/MicrosoftWebDriver.exe");
-		WebDriver driver = new EdgeDriver();
+		WebDriver driver = new ChromeDriver();
 		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 		
-		//WebDriverWait wait = new WebDriverWait(driver, 10);
-
-		//System.setProperty("webdriver.opera.driver", "C:/Users/TOSHIBA/Downloads/operadriver_win64/operadriver.exe");
-		//WebDriver driver = new OperaDriver();
 		driver.get("http://newtours.demoaut.com/");
 		WebElement uName = driver.findElement(By.name("userName"));
 		uName.clear();
@@ -40,8 +34,7 @@ public class FirstSeleniumScript {
 			System.out.println("Fail");
 		}
 		
-		
-		//driver.quit();
+		driver.quit();
 		
 	}
 
