@@ -10,13 +10,12 @@ import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.opera.OperaDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-public class FirstSeleniumScript {
+public class FirstSeleniumScript123 {
 
 	public static void main(String[] args) {
 
-		WebDriver driver = new ChromeDriver();
+		org.openqa.selenium.WebDriver driver = new ChromeDriver();
 		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-		
 		driver.get("http://newtours.demoaut.com/");
 		WebElement uName = driver.findElement(By.name("userName"));
 		uName.clear();
@@ -25,17 +24,16 @@ public class FirstSeleniumScript {
 		pwd.clear();
 		pwd.sendKeys("a");
 		driver.findElement(By.name("login")).click();
-		
 		WebElement link = driver.findElement(By.linkText("SIGN-OFF"));
-		
+
 		if (link.isDisplayed()) {
 			System.out.println("Pass");
-		}else {
+		} else {
 			System.out.println("Fail");
 		}
-		
+
 		driver.quit();
-		
+
 	}
 
 }

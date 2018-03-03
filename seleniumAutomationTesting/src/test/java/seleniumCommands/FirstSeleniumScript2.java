@@ -9,6 +9,8 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.opera.OperaDriver;
+import org.openqa.selenium.safari.SafariDriver;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class FirstSeleniumScript2 {
 
@@ -25,7 +27,7 @@ public class FirstSeleniumScript2 {
 		//driverO.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 		driverME.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 
-		//WebDriverWait wait = new WebDriverWait(driver, 10);
+		WebDriverWait wait = new WebDriverWait(driver, 10);
 
 		driver.get("http://newtours.demoaut.com/");
 		driverF.get("http://newtours.demoaut.com/");
@@ -59,6 +61,8 @@ public class FirstSeleniumScript2 {
 		if (driver.findElement(By.linkText("SIGN-OFF")).isDisplayed()) {
 			;
 			System.out.println("Chrome Pass");
+			System.out.println(driver.getTitle());
+
 		} else {
 			;
 			System.out.println("Chrome Fail");
@@ -97,6 +101,8 @@ public class FirstSeleniumScript2 {
 		//driverO.quit();
 		driverME.quit();
 
+		//WebDriverWait wait = new WebDriverWait(driver, 10);
+		
 	}
 
 }
