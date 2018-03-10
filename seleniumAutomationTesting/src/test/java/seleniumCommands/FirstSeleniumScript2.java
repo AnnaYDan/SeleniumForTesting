@@ -27,12 +27,13 @@ public class FirstSeleniumScript2 {
 		//driverO.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 		driverME.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 
-		WebDriverWait wait = new WebDriverWait(driver, 10);
+		//WebDriverWait wait = new WebDriverWait(driver, 10);
 
 		driver.get("http://newtours.demoaut.com/");
 		driverF.get("http://newtours.demoaut.com/");
 		//driverO.get("http://newtours.demoaut.com/");
 		driverME.get("http://newtours.demoaut.com/");
+		
 
 		WebElement uName = driver.findElement(By.name("userName"));
 		WebElement uNameF = driverF.findElement(By.name("userName"));
