@@ -14,7 +14,7 @@ public class FirstSeleniumScript123 {
 
 	public static void main(String[] args) {
 
-		org.openqa.selenium.WebDriver driver = new ChromeDriver();
+		WebDriver driver = new ChromeDriver();
 		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 		driver.get("http://newtours.demoaut.com/");
 		WebElement uName = driver.findElement(By.name("userName"));
