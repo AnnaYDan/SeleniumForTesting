@@ -43,6 +43,7 @@ public class SmThing {
 		System.out.println(sub(s1,s2)); // putout 996
 		
 		
+
 		
 	}
 
