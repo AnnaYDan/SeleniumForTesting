@@ -21,3 +21,5 @@ Feature: Testing registration page with different values for password and confir
     Examples: 
       | password  | confirm   | url                        |
       | userTy$e1 | userTy$e1 | create_account_success.php |
+      | user      | userTy$e1 | create_account_success.php |
+      | userTy$e1 | user      | create_account_success.php |

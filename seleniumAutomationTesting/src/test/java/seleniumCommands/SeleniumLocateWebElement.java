@@ -12,38 +12,47 @@ import org.openqa.selenium.support.ui.Select;
 public class SeleniumLocateWebElement {
 
 	public static void main(String[] args) {
-		// Selenium Locate Web Elements
+		// declare web browser
 		WebDriver driver = new ChromeDriver();
+		// declare waiting for FindElement(s) command
 		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-		// drivet.get is to open browser window
+		// open browser window and navigate to web page
 		driver.get("http://www.training.qaonlinetraining.com/testPage.php");
-		driver.findElement(By.name("name")).sendKeys("Solomon");
+		// locate by name and type
+		driver.findElement(By.name("name")).sendKeys("Salamandra");
+		// locate by is and type
 		driver.findElement(By.id("eml")).sendKeys("anutski@yahoo.com");
+		// locate by xpath and type
 		driver.findElement(By.xpath("/html/body/form[1]/input[3]")).sendKeys("localhost");
+		// locate by xpath and type
 		driver.findElement(By.xpath("//form[1]/textarea")).sendKeys("i am writing a comment");
+		// locate by link text and type
 		// driver.findElement(By.linkText("Open Goodle")).click();
+		// locate and choose one from collection of web elements
 		driver.findElements(By.name("gender")).get(1).click();
 		// driver.findElements(By.name("skill")).get(1).click();
 		// driver.findElement(By.name("skill")).sendKeys("qa");
 		// driver.findElement(By.name("skill")).sendKeys("ba");
+		
+		// 
 		List<WebElement> clist = driver.findElements(By.cssSelector("input[type='checkbox']"));
 		for (WebElement varia : clist) {
 			if (varia.isSelected()) {
 				varia.click();
 			}
 		}
-		
+		// locate by cssSelector
 		driver.findElement(By.cssSelector("option[value='ETHIOPIA']")).click();
 		
 		driver.findElement(By.xpath("/html/body/form/select[2]/option[2]")).click();
 		driver.findElement(By.xpath("/html/body/form/select[2]/option[1]")).click();
 
+		// using Select class for multichoice list
 		Select s = new Select(driver.findElement(By.name("skill")));
 		s.deselectAll();
 		s.selectByIndex(1);
 		s.selectByIndex(2);
-		//driver.findElement(By.name("submit")).click();
-		
+		driver.findElement(By.name("submit")).click();
 		
 		// driver.navigate().back();
 		// driver.findElement(By.partialLinkText("image")).click();
@@ -52,25 +61,8 @@ public class SeleniumLocateWebElement {
 		// driver.findElement(By.tagName("textarea")).clear();
 		// driver.close();
 		// String str = driver.findElement(By.xpath("/html/body/text()[4]")).getText();
-		// //may access JSExecutor
 		// System.out.println(str);
-		
-		
-		/*driver.findElement(By.id("alert")).click();
-		String srtalert = driver.switchTo().alert().getText();
-		driver.switchTo().alert().dismiss();
-		System.out.println(srtalert);
-		driver.findElement(By.id("confirm")).click();
-		driver.switchTo().alert().accept();
-		driver.findElement(By.id("prompt")).click();
-		driver.switchTo().alert().sendKeys("Sunday batch");
-		driver.switchTo().alert().accept();
-		String srtcheck = driver.findElement(By.id("demo")).getText();
-		if (srtcheck.contains("Sunday batch")) {
-			System.out.println("Pass");
-		} else {
-			System.out.println("Fail");
-		}*/
+
 	}
 
 }

@@ -2,60 +2,28 @@
 <testng-results skipped="0" failed="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="69632" started-at="2018-03-03T02:43:30Z" finished-at="2018-03-03T02:44:39Z">
+  <suite name="Default suite" duration-ms="1156" started-at="2018-03-16T17:16:24Z" finished-at="2018-03-16T17:16:25Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="69632" started-at="2018-03-03T02:43:30Z" finished-at="2018-03-03T02:44:39Z">
-      <class name="testingFramework.NewTest">
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:testingFramework.NewTest@2cf3d63b]" name="beforeMethod" is-config="true" duration-ms="744" started-at="2018-03-02T21:43:30Z" finished-at="2018-03-02T21:43:31Z">
+    <test name="Default test" duration-ms="1156" started-at="2018-03-16T17:16:24Z" finished-at="2018-03-16T17:16:25Z">
+      <class name="seleniumCommands.ManageAlerts">
+        <test-method status="PASS" signature="runAlwaysBefore()[pri:0, instance:seleniumCommands.ManageAlerts@27406a17]" name="runAlwaysBefore" is-config="true" duration-ms="592" started-at="2018-03-16T13:16:24Z" finished-at="2018-03-16T13:16:24Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="LogintestWithCorrectCredentials(java.lang.String, java.lang.String)[pri:0, instance:testingFramework.NewTest@2cf3d63b]" name="LogintestWithCorrectCredentials" duration-ms="3021" started-at="2018-03-02T21:43:31Z" data-provider="dpCorrectData" finished-at="2018-03-02T21:43:34Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[a]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[a]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- runAlwaysBefore -->
+        <test-method status="PASS" signature="checkPromptWithAccept()[pri:0, instance:seleniumCommands.ManageAlerts@27406a17]" name="checkPromptWithAccept" duration-ms="75" started-at="2018-03-16T13:16:24Z" finished-at="2018-03-16T13:16:25Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- LogintestWithCorrectCredentials -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:testingFramework.NewTest@2cf3d63b]" name="afterMethod" is-config="true" duration-ms="1" started-at="2018-03-02T21:43:34Z" finished-at="2018-03-02T21:43:34Z">
+        </test-method> <!-- checkPromptWithAccept -->
+        <test-method status="PASS" signature="runAlwaysBefore()[pri:0, instance:seleniumCommands.ManageAlerts@27406a17]" name="runAlwaysBefore" is-config="true" duration-ms="415" started-at="2018-03-16T13:16:25Z" finished-at="2018-03-16T13:16:25Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:testingFramework.NewTest@2cf3d63b]" name="beforeMethod" is-config="true" duration-ms="344" started-at="2018-03-02T21:43:34Z" finished-at="2018-03-02T21:43:34Z">
+        </test-method> <!-- runAlwaysBefore -->
+        <test-method status="PASS" signature="checkPromptWithDismiss()[pri:0, instance:seleniumCommands.ManageAlerts@27406a17]" name="checkPromptWithDismiss" duration-ms="54" started-at="2018-03-16T13:16:25Z" finished-at="2018-03-16T13:16:25Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="LogintestWithCorrectCredentials(java.lang.String, java.lang.String)[pri:0, instance:testingFramework.NewTest@2cf3d63b]" name="LogintestWithCorrectCredentials" duration-ms="65503" started-at="2018-03-02T21:43:34Z" data-provider="dpCorrectData" finished-at="2018-03-02T21:44:39Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[b]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[b]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- LogintestWithCorrectCredentials -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:testingFramework.NewTest@2cf3d63b]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-03-02T21:44:39Z" finished-at="2018-03-02T21:44:39Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-      </class> <!-- testingFramework.NewTest -->
+        </test-method> <!-- checkPromptWithDismiss -->
+      </class> <!-- seleniumCommands.ManageAlerts -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

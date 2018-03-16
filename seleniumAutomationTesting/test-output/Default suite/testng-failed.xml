@@ -7,7 +7,7 @@
         <methods>
           <include name="beforeMethod"/>
           <include name="afterMethod"/>
-          <include name="LogintestWithCorrectCredentials"/>
+          <include name="LogintestWithCorrectCredentials" invocation-numbers="1"/>
         </methods>
       </class> <!-- testingFramework.NewTest -->
     </classes>

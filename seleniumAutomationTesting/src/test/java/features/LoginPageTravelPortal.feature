@@ -1,8 +1,8 @@
-Feature: login page with different credentials by Anna D.
+Feature: Test cases for Travel Portal login page with different credentials by Anna D.
 
   Scenario Outline: Test login page with different credentials
     Given I am on at newtours homepage "http://newtours.demoaut.com/"
-    When I type username = "<name>" and password ="<pass>"
+    When I insert username = "<name>" and password ="<pass>"
     And click login button
     Then "<link>" link should be displayed
 

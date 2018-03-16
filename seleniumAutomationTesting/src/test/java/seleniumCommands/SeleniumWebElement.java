@@ -12,44 +12,62 @@ import org.openqa.selenium.chrome.ChromeDriver;
 public class SeleniumWebElement {
 
 	public static void main(String[] args) {
-		// Selenium Web Elements Commands
+		// declare browser driver
 		WebDriver driver = new ChromeDriver();
+		// declare waiting
 		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-		//drivet.get is to open browser window
+		// open browser window and navigate to web page
 		driver.get("http://newtours.demoaut.com/");
+		// declare variable for user name field
 		WebElement userName = driver.findElement(By.name("userName"));
+		// clean user name field
 		userName.clear();
+		// click in user name field
 		userName.click();
+		// get user name box size and print result
 		System.out.println("User name box size is: " + userName.getAttribute("size"));
+		// get user name box input type and print result
 		System.out.println("User name input type is: " + userName.getAttribute("type"));
+		// get user name box location and print result
 		Point Location = userName.getLocation();
 		System.out.println("User name box is located at: " + "x=" + Location.x + " and y=" + Location.y);
+		// get user name box dimension and print result
 		org.openqa.selenium.Dimension size = userName.getSize();
 		System.out.println("User name height is " + size.height + " and width " + size.width);
+		// get user name box tag name and print result
 		System.out.println("User name tag : " + userName.getTagName());
+		// get text on sign-on button and print result
 		System.out.println("Text of sing-on link is: " + driver.findElement(By.linkText("SIGN-ON")).getText());
+
+		// checking is user name box is displaying or not
 		if (userName.isDisplayed()) {
 			System.out.println("yes, user name is visible");
 		}else {
 			System.out.println("no, user name is invisible");
 		}
-		
+
+		// checking is user name box has disable attribute or not
 		if (userName.isEnabled()) {
 			System.out.println("yes, user name is active");
 		}else {
 			System.out.println("no, user name is inactive");
 		}
-		
+
+		// checking is user name box is selected or not
 		if (userName.isSelected()) {
 			System.out.println("yes, user name is selected");
 		}else {
 			System.out.println("no, user name is not selected");
 		}
 		
+		// get and print background color
 		System.out.println("Back ground color of user name is: " + userName.getCssValue("background-color"));
-		userName.sendKeys("solomon"); //type text
-		userName.submit(); //press enter
+		// type text in user name
+		userName.sendKeys("Salamandra");
+		//press enter
+		userName.submit(); 
 		
+		// close browser window
 		driver.close();
 	}
 

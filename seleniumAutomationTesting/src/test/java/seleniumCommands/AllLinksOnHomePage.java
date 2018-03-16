@@ -11,15 +11,16 @@ public class AllLinksOnHomePage {
 
 	public static void main(String[] args) {
 
+		// declare browser driver
 		WebDriver driver = new ChromeDriver();
 		
-		//Launching sample website
+		// navigating to website
 		driver.get("http://newtours.demoaut.com/");
 		
-		//Get list of web-elements with tagName  - a
+		// get list of web-elements with tagName  - a
 		List<WebElement> allLinks = driver.findElements(By.tagName("a"));
 		
-		//Traversing through the list and printing its text along with link address
+		// traversing through the list and printing its text along with link address
 		for(WebElement link:allLinks){
 			
 			System.out.println(link.getText() + " >>>>>> " + link.getAttribute("href"));
