@@ -14,7 +14,7 @@ public class SeleniumWebElement {
 	public static void main(String[] args) {
 		// declare browser driver
 		WebDriver driver = new ChromeDriver();
-		// declare waiting
+		// declare implicit wait
 		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 		// open browser window and navigate to web page
 		driver.get("http://newtours.demoaut.com/");
@@ -48,9 +48,9 @@ public class SeleniumWebElement {
 
 		// checking is user name box has disable attribute or not
 		if (userName.isEnabled()) {
-			System.out.println("yes, user name is active");
+			System.out.println("user name has not 'disabled' atribute");
 		}else {
-			System.out.println("no, user name is inactive");
+			System.out.println("user name has 'disabled' atribute");
 		}
 
 		// checking is user name box is selected or not
@@ -62,11 +62,7 @@ public class SeleniumWebElement {
 		
 		// get and print background color
 		System.out.println("Back ground color of user name is: " + userName.getCssValue("background-color"));
-		// type text in user name
-		userName.sendKeys("Salamandra");
-		//press enter
-		userName.submit(); 
-		
+
 		// close browser window
 		driver.close();
 	}

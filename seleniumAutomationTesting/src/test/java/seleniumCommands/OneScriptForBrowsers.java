@@ -21,7 +21,6 @@ public class OneScriptForBrowsers {
 		// Firefox driver
 		WebDriver driverF = new FirefoxDriver();
 		// Edge driver
-		System.setProperty("webdriver.edge.driver", "C:/Tools/MicrosoftWebDriver.exe");
 		WebDriver driverME = new EdgeDriver();
 		
 		// applying waiting for each driver
