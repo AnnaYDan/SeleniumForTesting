@@ -16,11 +16,11 @@ public class OneScriptForBrowsers {
 
 	public static void main(String[] args) {
 
-		// Chrome driver
+		// declare Chrome driver
 		WebDriver driver = new ChromeDriver();
-		// Firefox driver
+		// declare Firefox driver
 		WebDriver driverF = new FirefoxDriver();
-		// Edge driver
+		// declare Edge driver
 		WebDriver driverME = new EdgeDriver();
 		
 		// applying waiting for each driver

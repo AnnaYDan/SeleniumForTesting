@@ -42,7 +42,7 @@ public class ChooseMenuItem {
 		action.moveByOffset(50, 120).perform();
 		// adding such way of waiting because others doesn't work
 		try {
-			Thread.sleep(2000);
+			Thread.sleep(2000); // miliseconds
 		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}
