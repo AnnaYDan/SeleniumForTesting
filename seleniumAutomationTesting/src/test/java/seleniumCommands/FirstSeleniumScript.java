@@ -15,7 +15,7 @@ public class FirstSeleniumScript {
 
 	public static void main(String[] args) {
 
-		// declare broswer driver
+		// declare browser driver
 		WebDriver driver = new ChromeDriver();
 		// waiting for FindElement(s) commands
 		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
@@ -44,7 +44,7 @@ public class FirstSeleniumScript {
 			System.out.println("Fail");
 		}
 
-		// close browser
+		// close all browser windows under automation 
 		driver.quit();
 
 	}
