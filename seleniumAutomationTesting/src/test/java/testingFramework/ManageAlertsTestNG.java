@@ -37,6 +37,11 @@ public class ManageAlertsTestNG {
 		//Assert.assertTrue(!demo.contains("Konstantinopolsky"));
 		Assert.assertFalse(demo.contains("Konstantinopolsky"));
 	}
-	
+
+	// running after executing test method with just printing about this fact
+	@AfterMethod
+	public void afterMethod() {
+		System.out.println("<<<<<<<<<<<<<<<< after test finished");		
+	}
 
 }

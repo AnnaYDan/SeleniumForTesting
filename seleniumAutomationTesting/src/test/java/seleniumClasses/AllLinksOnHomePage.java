@@ -1,4 +1,4 @@
-package seleniumCommands;
+package seleniumClasses;
 
 import java.util.List;
 

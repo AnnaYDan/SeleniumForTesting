@@ -14,7 +14,8 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 public class FirstSeleniumScript {
 
 	public static void main(String[] args) {
-
+		
+		// System.setProperty("webdriver.chrome.driver", "C:\tools\chromedriver.exe");
 		// declare browser driver
 		WebDriver driver = new ChromeDriver();
 		// waiting for FindElement(s) commands

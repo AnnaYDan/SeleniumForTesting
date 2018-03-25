@@ -1,29 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="1156" started-at="2018-03-16T17:16:24Z" finished-at="2018-03-16T17:16:25Z">
+  <suite name="Default suite" duration-ms="1452" started-at="2018-03-25T03:29:36Z" finished-at="2018-03-25T03:29:38Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="1156" started-at="2018-03-16T17:16:24Z" finished-at="2018-03-16T17:16:25Z">
-      <class name="seleniumCommands.ManageAlerts">
-        <test-method status="PASS" signature="runAlwaysBefore()[pri:0, instance:seleniumCommands.ManageAlerts@27406a17]" name="runAlwaysBefore" is-config="true" duration-ms="592" started-at="2018-03-16T13:16:24Z" finished-at="2018-03-16T13:16:24Z">
+    <test name="Default test" duration-ms="1452" started-at="2018-03-25T03:29:36Z" finished-at="2018-03-25T03:29:38Z">
+      <class name="testingFramework.ManageAlertsTestNG">
+        <test-method status="PASS" signature="runAlwaysBefore()[pri:0, instance:testingFramework.ManageAlertsTestNG@47987356]" name="runAlwaysBefore" is-config="true" duration-ms="845" started-at="2018-03-25T03:29:36Z" finished-at="2018-03-25T03:29:37Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runAlwaysBefore -->
-        <test-method status="PASS" signature="checkPromptWithAccept()[pri:0, instance:seleniumCommands.ManageAlerts@27406a17]" name="checkPromptWithAccept" duration-ms="75" started-at="2018-03-16T13:16:24Z" finished-at="2018-03-16T13:16:25Z">
+        <test-method status="PASS" signature="checkPromptWithAccept()[pri:0, instance:testingFramework.ManageAlertsTestNG@47987356]" name="checkPromptWithAccept" duration-ms="70" started-at="2018-03-25T03:29:37Z" finished-at="2018-03-25T03:29:37Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkPromptWithAccept -->
-        <test-method status="PASS" signature="runAlwaysBefore()[pri:0, instance:seleniumCommands.ManageAlerts@27406a17]" name="runAlwaysBefore" is-config="true" duration-ms="415" started-at="2018-03-16T13:16:25Z" finished-at="2018-03-16T13:16:25Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:testingFramework.ManageAlertsTestNG@47987356]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-03-25T03:29:37Z" finished-at="2018-03-25T03:29:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="runAlwaysBefore()[pri:0, instance:testingFramework.ManageAlertsTestNG@47987356]" name="runAlwaysBefore" is-config="true" duration-ms="449" started-at="2018-03-25T03:29:37Z" finished-at="2018-03-25T03:29:37Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runAlwaysBefore -->
-        <test-method status="PASS" signature="checkPromptWithDismiss()[pri:0, instance:seleniumCommands.ManageAlerts@27406a17]" name="checkPromptWithDismiss" duration-ms="54" started-at="2018-03-16T13:16:25Z" finished-at="2018-03-16T13:16:25Z">
+        <test-method status="PASS" signature="checkPromptWithDismiss()[pri:0, instance:testingFramework.ManageAlertsTestNG@47987356]" name="checkPromptWithDismiss" duration-ms="60" started-at="2018-03-25T03:29:37Z" finished-at="2018-03-25T03:29:38Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkPromptWithDismiss -->
-      </class> <!-- seleniumCommands.ManageAlerts -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:testingFramework.ManageAlertsTestNG@47987356]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-03-25T03:29:38Z" finished-at="2018-03-25T03:29:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- testingFramework.ManageAlertsTestNG -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

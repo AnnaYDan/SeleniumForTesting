@@ -14,11 +14,11 @@ public class FileDownload {
 
 		// Create a profile
 		FirefoxProfile profile = new FirefoxProfile();
-		// using this preference you can give file path, extention type and any
-		// other cofigurations to the pbrowser
+		// using this preference you can give file path, extension type and any
+		// other configurations to the browser
 		System.setProperty("webdriver.gecko.driver", "C:\\Tools\\geckodriver.exe");
-		// Set preferences for file type not to raise any popup windwo, and use
-		// the defoult one
+		// Set preferences for file type not to raise any popup window, and use
+		// the default one
 		profile.setPreference("browser.helperApps.neverAsk.openFile", "application/octet-stream");
 
 		// Open browser with profile
@@ -28,9 +28,6 @@ public class FileDownload {
 
 		// Set implicit wait
 		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-
-		// Maximize window
-		driver.manage().window().maximize();
 
 		// Open APP to download application
 		driver.get("https://filehippo.com/download_free_pdf_reader/");

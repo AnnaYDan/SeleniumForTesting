@@ -1,4 +1,4 @@
-package seleniumCommands;
+package seleniumClasses;
 
 import java.util.List;
 import java.util.concurrent.TimeUnit;
@@ -8,7 +8,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class AllCheckoxes {
+public class AllCheckboxes1 {
 
 	public static void main(String[] args) {
 
@@ -30,6 +30,9 @@ public class AllCheckoxes {
 
 		for (WebElement oneCheck : allCheckoxes) {
 			System.out.println(">>>>..." + oneCheck.getAttribute("name"));
+			
+			if (!oneCheck.isSelected()) oneCheck.click();
+			
 		}
 	}
 }
