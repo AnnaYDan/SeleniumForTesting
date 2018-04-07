@@ -7,7 +7,7 @@ import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class SeleniumCommands {
+public class WebDriver05WindowCommands {
 
 	public static void main(String[] args) {
 		// declare browser driver

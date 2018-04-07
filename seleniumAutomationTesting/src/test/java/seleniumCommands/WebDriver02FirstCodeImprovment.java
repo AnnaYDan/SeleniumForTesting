@@ -11,7 +11,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.opera.OperaDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-public class FirstSeleniumScript {
+public class WebDriver02FirstCodeImprovment {
 
 	public static void main(String[] args) {
 		

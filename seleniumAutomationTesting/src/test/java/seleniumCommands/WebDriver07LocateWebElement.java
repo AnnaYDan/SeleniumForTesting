@@ -9,7 +9,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.Select;
 
-public class SeleniumLocateWebElement {
+public class WebDriver07LocateWebElement {
 
 	public static void main(String[] args) {
 		// declare web browser

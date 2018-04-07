@@ -12,7 +12,7 @@ import org.openqa.selenium.opera.OperaDriver;
 import org.openqa.selenium.safari.SafariDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-public class OneScriptForBrowsers {
+public class WebDriver04OneScriptForBrowsers {
 
 	public static void main(String[] args) {
 
