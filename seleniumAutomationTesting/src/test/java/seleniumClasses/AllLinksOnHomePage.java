@@ -22,9 +22,7 @@ public class AllLinksOnHomePage {
 		
 		// traversing through the list and printing its text along with link address
 		for(WebElement link:allLinks){
-			
 			System.out.println(link.getText() + " >>>>>> " + link.getAttribute("href"));
-			
 		}
 		
 		driver.quit();
