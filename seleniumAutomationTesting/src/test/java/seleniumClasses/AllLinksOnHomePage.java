@@ -25,6 +25,8 @@ public class AllLinksOnHomePage {
 			System.out.println(link.getText() + " >>>>>> " + link.getAttribute("href"));
 		}
 		
+		System.out.println("On home page we have " + allLinks.size());
+		
 		driver.quit();
 	}
 

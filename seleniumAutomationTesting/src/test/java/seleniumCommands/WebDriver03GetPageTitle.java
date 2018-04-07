@@ -34,6 +34,8 @@ public class WebDriver03GetPageTitle {
 		
 		// special way for assertion
 		Assert.assertTrue(title.contains("Welcome: Mercury Tours"));
+		
+		driver.quit();
 	}
 
 }

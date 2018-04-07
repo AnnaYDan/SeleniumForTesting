@@ -34,5 +34,7 @@ public class AllCheckboxes1 {
 			if (!oneCheck.isSelected()) oneCheck.click();
 			
 		}
+		
+		driver.quit();
 	}
 }
