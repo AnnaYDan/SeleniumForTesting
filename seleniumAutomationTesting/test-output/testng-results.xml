@@ -2,36 +2,60 @@
 <testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="1452" started-at="2018-03-25T03:29:36Z" finished-at="2018-03-25T03:29:38Z">
+  <suite name="Default suite" duration-ms="61992" started-at="2018-04-07T22:37:45Z" finished-at="2018-04-07T22:38:47Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="1452" started-at="2018-03-25T03:29:36Z" finished-at="2018-03-25T03:29:38Z">
-      <class name="testingFramework.ManageAlertsTestNG">
-        <test-method status="PASS" signature="runAlwaysBefore()[pri:0, instance:testingFramework.ManageAlertsTestNG@47987356]" name="runAlwaysBefore" is-config="true" duration-ms="845" started-at="2018-03-25T03:29:36Z" finished-at="2018-03-25T03:29:37Z">
+    <test name="Default test" duration-ms="61992" started-at="2018-04-07T22:37:45Z" finished-at="2018-04-07T22:38:47Z">
+      <class name="testingFramework.NewTest">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:testingFramework.NewTest@6283d8b8]" name="beforeMethod" is-config="true" duration-ms="697" started-at="2018-04-07T22:37:45Z" finished-at="2018-04-07T22:37:46Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- runAlwaysBefore -->
-        <test-method status="PASS" signature="checkPromptWithAccept()[pri:0, instance:testingFramework.ManageAlertsTestNG@47987356]" name="checkPromptWithAccept" duration-ms="70" started-at="2018-03-25T03:29:37Z" finished-at="2018-03-25T03:29:37Z">
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="LogintestWithCorrectCredentials(java.lang.String, java.lang.String)[pri:0, instance:testingFramework.NewTest@6283d8b8]" name="LogintestWithCorrectCredentials" duration-ms="3104" started-at="2018-04-07T22:37:46Z" data-provider="dpCorrectData" finished-at="2018-04-07T22:37:49Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[a]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[a]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- checkPromptWithAccept -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:testingFramework.ManageAlertsTestNG@47987356]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-03-25T03:29:37Z" finished-at="2018-03-25T03:29:37Z">
+        </test-method> <!-- LogintestWithCorrectCredentials -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:testingFramework.NewTest@6283d8b8]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-04-07T22:37:49Z" finished-at="2018-04-07T22:37:49Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="runAlwaysBefore()[pri:0, instance:testingFramework.ManageAlertsTestNG@47987356]" name="runAlwaysBefore" is-config="true" duration-ms="449" started-at="2018-03-25T03:29:37Z" finished-at="2018-03-25T03:29:37Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:testingFramework.NewTest@6283d8b8]" name="beforeMethod" is-config="true" duration-ms="294" started-at="2018-04-07T22:37:49Z" finished-at="2018-04-07T22:37:49Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- runAlwaysBefore -->
-        <test-method status="PASS" signature="checkPromptWithDismiss()[pri:0, instance:testingFramework.ManageAlertsTestNG@47987356]" name="checkPromptWithDismiss" duration-ms="60" started-at="2018-03-25T03:29:37Z" finished-at="2018-03-25T03:29:38Z">
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="LogintestWithCorrectCredentials(java.lang.String, java.lang.String)[pri:0, instance:testingFramework.NewTest@6283d8b8]" name="LogintestWithCorrectCredentials" duration-ms="57859" started-at="2018-04-07T22:37:49Z" data-provider="dpCorrectData" finished-at="2018-04-07T22:38:47Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[b]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[b]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- checkPromptWithDismiss -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:testingFramework.ManageAlertsTestNG@47987356]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-03-25T03:29:38Z" finished-at="2018-03-25T03:29:38Z">
+        </test-method> <!-- LogintestWithCorrectCredentials -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:testingFramework.NewTest@6283d8b8]" name="afterMethod" is-config="true" duration-ms="1" started-at="2018-04-07T22:38:47Z" finished-at="2018-04-07T22:38:47Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-      </class> <!-- testingFramework.ManageAlertsTestNG -->
+      </class> <!-- testingFramework.NewTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
