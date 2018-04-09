@@ -17,16 +17,19 @@ public class WebDriver08HandleAlerts {
 		driver.get("http://www.training.qaonlinetraining.com/testPage.php");
 
 		driver.findElement(By.id("alert")).click();
-		String srtalert = driver.switchTo().alert().getText();
+		String srtAlert = driver.switchTo().alert().getText();
 		driver.switchTo().alert().dismiss();
-		System.out.println(srtalert);
+		System.out.println("text in alert window: " + srtAlert);
+		
 		driver.findElement(By.id("confirm")).click();
 		driver.switchTo().alert().accept();
+		
 		driver.findElement(By.id("prompt")).click();
 		driver.switchTo().alert().sendKeys("Sunday batch");
 		driver.switchTo().alert().accept();
+		
 		String srtcheck = driver.findElement(By.id("demo")).getText();
-		if (srtcheck.contains("Sunday batch")) {
+				if (srtcheck.contains("Sunday batch")) {
 			System.out.println("Pass");
 		} else {
 			System.out.println("Fail");

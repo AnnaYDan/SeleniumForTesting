@@ -28,6 +28,9 @@ public class AllLinksOnHomePage {
 		System.out.println("On home page we have " + allLinks.size());
 		
 		driver.quit();
+		
+		
+		
 	}
 
 }

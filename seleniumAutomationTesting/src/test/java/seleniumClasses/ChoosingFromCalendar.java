@@ -21,35 +21,56 @@ public class ChoosingFromCalendar {
 
 		// locate calendar icon
 		driver.findElement(By.xpath(
-				"//*[@id=\"root\"]/div[3]/table/tbody/tr[2]/td/table/tbody/tr/td[2]/div/div/div[1]/div[5]/table/tbody/tr[2]/td[1]/div/div[1]/div[3]"))
+				"//*[@id=\"flt-app\"]/div[2]/div[1]/div[4]/div[1]/div[2]/div[2]/div[5]/div[1]/div[2]"))
 				.click();
 
 		// declare variable for month
-		WebElement month = driver.findElement(By.xpath("html/body/div[3]/div/div/table/tbody/tr[1]/td/div/div[3]"));
+		WebElement month = driver.findElement(By.xpath("//*[@id=\"flt-modaldialog\"]/div/two-month-calendar/div/div/calendar-month[1]/month-header/jsl"));
 
 		// declare variable for next arrow
-		WebElement next = driver.findElement(By.xpath("html/body/div[3]/div/div/table/tbody/tr[1]/td/div/div[2]"));
+		WebElement next = driver.findElement(By.xpath("//*[@id=\"flt-modaldialog\"]/div/two-month-calendar/div/calendar-flippers/div[1]"));
 
+		
+		// debugging
+		// ???????? element not visible ???????? 
+		// month.click();
+		
+		try {
+			Thread.sleep(3000);    //milliseconds
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		} 
+
+		System.out.println(next.isDisplayed());
+		System.out.println(next.isEnabled());
+		
+		
+		
+		
 		// click next icon while get September
 		while (!month.getText().contains("September")) {
 			next.click();
 		}
 
-		// choose departure date September 7th
-		driver.findElement(By.xpath("html/body/div[3]/div/div/table/tbody/tr[2]/td/div/table[1]/tbody/tr[3]/td[6]/div"))
+		
+		// choose departure date September 9th
+		driver.findElement(By.xpath("//*[@id=\"flt-modaldialog\"]/div/two-month-calendar/div/div/calendar-month[6]/calendar-week[3]/calendar-day[1]/div[3]"))
 				.click();
 
-		// choose arrival date September 14th
-		driver.findElement(By.xpath("html/body/div[3]/div/div/table/tbody/tr[2]/td/div/table[1]/tbody/tr[4]/td[6]/div"))
+		// choose arrival date September 23th
+		driver.findElement(By.xpath("//*[@id=\"flt-modaldialog\"]/div/two-month-calendar/div/div/calendar-month[6]/calendar-week[5]/calendar-day[1]/div[3]"))
 				.click();
 
+		// click Done button
+		driver.findElement(By.xpath("//*[@id=\"flt-modaldialog\"]/div/div[5]/g-raised-button/div/jsl")).click();
+		
 		// get date for "From" field
 		String record = driver.findElement(By.xpath(
-				".//*[@id='root']/div[3]/table/tbody/tr[2]/td/table/tbody/tr/td[2]/div/div/div[1]/div[5]/table/tbody/tr[2]/td[1]/div/div[1]/div[1]"))
+				"//*[@id=\"flt-app\"]/div[2]/div[1]/div[4]/div[1]/div[2]/div[2]/div[5]/div[2]"))
 				.getText();
 
 		// assertion with if-condition
-		if (record.contains("September 7")) {
+		if (record.contains("Sep 9")) {
 			System.out.println("Calendar worked successfully");
 		} else {
 			System.out.println("Check your date");

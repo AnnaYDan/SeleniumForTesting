@@ -13,16 +13,12 @@ public class AllCheckboxes1 {
 	public static void main(String[] args) {
 
 		WebDriver driver = new ChromeDriver();
-
 		driver.get("http://www.training.qaonlinetraining.com/testPage.php");
-
-		//driver.get("http://www.walmart.com");
 		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 		
 /*		try {
 			Thread.sleep(5000);
 		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}*/
 		
@@ -31,10 +27,11 @@ public class AllCheckboxes1 {
 		for (WebElement oneCheck : allCheckoxes) {
 			System.out.println(">>>>..." + oneCheck.getAttribute("name"));
 			
-			if (!oneCheck.isSelected()) oneCheck.click();
+			if (!oneCheck.isSelected())	oneCheck.click();
 			
 		}
 		
-		driver.quit();
+		
+		//driver.quit();
 	}
 }

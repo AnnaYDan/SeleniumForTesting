@@ -25,8 +25,8 @@ public class MyFirstTest {
 		driver.findElement(By.name("password")).sendKeys(pass);
 	}
 
-	@When("^click sign-in button$")
-	public void click_sign_in_button() throws Throwable {
+	@When("^click Sign-in button$")
+	public void click_Sign_in_button() throws Throwable {
 		driver.findElement(By.name("login")).click();
 	}
 
