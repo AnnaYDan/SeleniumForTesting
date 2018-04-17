@@ -48,9 +48,9 @@ public class WebDriver06WebElement {
 
 		// checking is user name box has disable attribute or not
 		if (userName.isEnabled()) {
-			System.out.println("user name has not 'disabled' atribute");
+			System.out.println("user name has not 'disabled' attribute");
 		}else {
-			System.out.println("user name has 'disabled' atribute");
+			System.out.println("user name has 'disabled' attribute");
 		}
 
 		// checking is user name box is selected or not

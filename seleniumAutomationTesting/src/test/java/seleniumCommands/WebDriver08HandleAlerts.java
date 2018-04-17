@@ -19,20 +19,30 @@ public class WebDriver08HandleAlerts {
 		driver.findElement(By.id("alert")).click();
 		String srtAlert = driver.switchTo().alert().getText();
 		driver.switchTo().alert().dismiss();
-		System.out.println("text in alert window: " + srtAlert);
+		//System.out.println("text in alert window: " + srtAlert);
+		if(srtAlert.contains("How are you?")) {
+			System.out.println("Alert Pass");
+		}else {
+			System.out.println("Alert Fail");
+		}
 		
 		driver.findElement(By.id("confirm")).click();
-		driver.switchTo().alert().accept();
-		
+		driver.switchTo().alert().dismiss();
+		String srtcheck = driver.findElement(By.id("demo")).getText();
+		if (srtcheck.contains("Cancel")) {
+	System.out.println("Confirm Pass");
+} else {
+	System.out.println("Confirm Fail");
+}		
 		driver.findElement(By.id("prompt")).click();
 		driver.switchTo().alert().sendKeys("Sunday batch");
 		driver.switchTo().alert().accept();
 		
-		String srtcheck = driver.findElement(By.id("demo")).getText();
-				if (srtcheck.contains("Sunday batch")) {
-			System.out.println("Pass");
+		String srtcheck2 = driver.findElement(By.id("demo")).getText();
+				if (srtcheck2.contains("Sunday batch")) {
+			System.out.println("Prompt Pass");
 		} else {
-			System.out.println("Fail");
+			System.out.println("Prompt Fail");
 		}
 	}
 

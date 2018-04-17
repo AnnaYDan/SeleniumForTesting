@@ -34,7 +34,7 @@ public class LoginPageTravelPortal {
 	// equivalent code for cucumber file about clicking login button
 	@When("^click login button$")
 	public void click_login_button() throws Throwable {
-		driver.findElement(By.name("login")).click();
+		driver.findElement(By.xpath("//input[@value='Login']")).click();
 	}
 
 	// equivalent code for cucumber file about checking expecting and actual results

@@ -41,18 +41,26 @@ public class WebDriver07LocateWebElement {
 				varia.click();
 			}
 		}
-		// locate by cssSelector
-		driver.findElement(By.cssSelector("option[value='ETHIOPIA']")).click();
 		
-		driver.findElement(By.xpath("/html/body/form/select[2]/option[2]")).click();
-		driver.findElement(By.xpath("/html/body/form/select[2]/option[1]")).click();
+		// locating for dropdown list Country
+		driver.findElement(By.name("country")).sendKeys("Ethiopia");
+		driver.findElement(By.cssSelector("option[value='FRANCE']")).click();
+		driver.findElement(By.xpath("//option[@value='INDIA']")).click();
+		
+		//driver.findElement(By.xpath("/html/body/form/select[2]/option[2]")).click();
+		//driver.findElement(By.xpath("/html/body/form/select[2]/option[1]")).click();
 
 		// using Select class for multichoice list
 		Select s = new Select(driver.findElement(By.name("skill")));
 		s.deselectAll();
 		s.selectByIndex(1);
-		s.selectByIndex(2);
-		driver.findElement(By.name("submit")).click();
+		//s.selectByIndex(2);
+		s.selectByVisibleText("Management");
+		s.deselectByValue("qa");;
+		
+		
+		
+		//driver.findElement(By.name("submit")).click();
 		
 		// driver.navigate().back();
 		// driver.findElement(By.partialLinkText("image")).click();

@@ -13,7 +13,7 @@ public class AllLinksOnHomePage {
 
 		// declare browser driver
 		WebDriver driver = new ChromeDriver();
-		
+
 		// navigating to website
 		driver.get("http://newtours.demoaut.com/");
 		

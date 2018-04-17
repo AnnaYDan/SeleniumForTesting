@@ -14,8 +14,8 @@ public class MyFirstTest {
 
 	WebDriver driver = new ChromeDriver();
 	
-	@Given("^I am on travel portal homepage \"([^\"]*)\"$")
-	public void i_am_on_travel_portal_homepage(String url) throws Throwable {
+	@Given("^I am on tralev portal homepage \"([^\"]*)\"$")
+	public void i_am_on_tralev_portal_homepage(String url) throws Throwable {
 		driver.get(url);
 	}
 

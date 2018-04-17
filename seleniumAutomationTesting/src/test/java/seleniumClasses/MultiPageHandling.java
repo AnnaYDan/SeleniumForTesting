@@ -4,6 +4,7 @@ import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -33,7 +34,7 @@ public class MultiPageHandling {
 		driver.findElement(By.partialLinkText("open Yahoo page")).click();
 
 		// waiting while page will be uploaded
-		driver.manage().timeouts().pageLoadTimeout(5, TimeUnit.SECONDS);
+		driver.manage().timeouts().pageLoadTimeout(10, TimeUnit.SECONDS);
 
 		// some other ways to wait
 		// using WebDriverWait class
@@ -56,6 +57,17 @@ public class MultiPageHandling {
 		
 		// switch to window with yahoo page
 		driver.switchTo().window(yahooID);
+		
+		try {
+			Thread.sleep(10000);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+		
+		
+		WebDriverWait wait = new WebDriverWait(driver, 10);
+		WebElement element = wait.until(ExpectedConditions.elementToBeClickable(By.name("p")));
+
 		
 		// find search field and type Selenium
 		driver.findElement(By.name("p")).sendKeys("Selenium WebDriver");

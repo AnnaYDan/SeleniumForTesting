@@ -22,15 +22,16 @@ public class AllCheckboxes1 {
 			e.printStackTrace();
 		}*/
 		
-		List<WebElement> allCheckoxes = driver.findElements(By.xpath("//input[@type='checkbox']"));
+		List<WebElement> allCheckBoxes = driver.findElements(By.xpath("//input[@type='checkbox']"));
 
-		for (WebElement oneCheck : allCheckoxes) {
+		for (WebElement oneCheck : allCheckBoxes) {
 			System.out.println(">>>>..." + oneCheck.getAttribute("name"));
 			
-			if (!oneCheck.isSelected())	oneCheck.click();
+			if (oneCheck.isSelected())	oneCheck.click();
 			
 		}
 		
+		allCheckBoxes.get(3).click();
 		
 		//driver.quit();
 	}
