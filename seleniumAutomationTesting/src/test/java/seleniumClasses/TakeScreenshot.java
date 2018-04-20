@@ -23,7 +23,7 @@ public class TakeScreenshot {
 		driver.get("http://www.google.com");
 
 		// Take screenshot and store as a file format
-		takeScreenShot(driver, "myScreenShot");
+		takeScreenShot(driver, "myScreenShotOnline");
 	}
 
 	public static void takeScreenShot(WebDriver driver, String fileName) {

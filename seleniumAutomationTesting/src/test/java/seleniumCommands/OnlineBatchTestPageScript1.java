@@ -47,18 +47,22 @@ public class OnlineBatchTestPageScript1 {
 		driver.findElement(By.name("boat")).click();
 		
 		// locate drop down list and choose France
+		// option 1
 		//driver.findElement(By.xpath("//select[@name='country']")).sendKeys("France");
+		// option 2
 		//driver.findElement(By.xpath("//option[@value='INDIA']")).click();
+		// option 3		
 		driver.findElement(By.cssSelector("option[value='FRANCE']")).click();
 		
 		// locate multichoice list and select QA, programming and management
 		Select multiChoice = new Select(driver.findElement(By.name("skill")));
+		multiChoice.deselectAll();
 		multiChoice.selectByVisibleText("Database");
 		multiChoice.selectByValue("mgmt");
 		multiChoice.selectByIndex(1);
 		
 		// locate Send and click
-		driver.findElement(By.name("submit")).click();
+		//driver.findElement(By.name("submit")).click();
 		
 		// locate input and check that we get our information 
 		// unable to locate input results
@@ -67,6 +71,14 @@ public class OnlineBatchTestPageScript1 {
 		// apply such locator as linkText and partialLinkText
 		driver.findElement(By.partialLinkText("Goodle")).click();
 		driver.navigate().back();
+		
+		try {
+			Thread.sleep(3000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} 
+		
 		driver.navigate().refresh();
 		
 		

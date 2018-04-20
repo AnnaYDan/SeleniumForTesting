@@ -35,7 +35,7 @@ public class ChooseMenuItem {
 		
 		// declaring class Action to use it for choosing from menu
 		Actions action = new Actions(driver);
-		
+
 		// executing moving to Selenium link in menu
 		action.moveToElement(menu).build().perform();
 		// executing for moving down from Selelnium link

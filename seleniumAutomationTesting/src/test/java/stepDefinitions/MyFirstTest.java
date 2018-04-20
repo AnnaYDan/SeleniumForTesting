@@ -33,5 +33,6 @@ public class MyFirstTest {
 	@Then("^link \"([^\"]*)\" should be displayed$")
 	public void link_should_be_displayed(String link) throws Throwable {
 		Assert.assertTrue(driver.findElement(By.linkText(link)).isDisplayed());
+		//Assert.assertTrue(true);
 	}
 }
