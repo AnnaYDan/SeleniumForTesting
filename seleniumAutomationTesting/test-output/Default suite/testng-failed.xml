@@ -3,11 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testingFramework.JSClickExample">
+      <class name="testNGexamples.LoginLogoutTest">
         <methods>
-          <include name="testClickJS"/>
+          <include name="beforeMethod"/>
+          <include name="afterMethod"/>
+          <include name="LogintestWithCorrectCredentials" invocation-numbers="1"/>
         </methods>
-      </class> <!-- testingFramework.JSClickExample -->
+      </class> <!-- testNGexamples.LoginLogoutTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

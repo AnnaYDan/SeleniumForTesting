@@ -1,4 +1,4 @@
-package testingFramework;
+package testNGexamples;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -26,7 +26,7 @@ public class ManageAlertsTestNG {
 	public void checkPromptWithAccept() {
 		driver.switchTo().alert().accept();
 		String demo = driver.findElement(By.id("demo")).getText();
-		Assert.assertTrue(demo.contains("Konstantinopolsky"));
+		Assert.assertTrue(demo.contains("Koky"));
 	}
 	
 	// second test for dismiss alert

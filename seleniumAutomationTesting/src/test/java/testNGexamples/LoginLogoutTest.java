@@ -1,4 +1,4 @@
-package testingFramework;
+package testNGexamples;
 
 import org.testng.annotations.Test;
 import org.testng.annotations.BeforeMethod;
@@ -12,7 +12,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterMethod;
 
-public class NewTest {
+public class LoginLogoutTest {
 
 	// declare browser driver as a webdriver
 	WebDriver driver = new ChromeDriver();
