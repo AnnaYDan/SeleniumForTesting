@@ -8,6 +8,7 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
+
 public class ManageAlertsTestNG {
 	
 	// declare browser driver
@@ -22,17 +23,17 @@ public class ManageAlertsTestNG {
 	}
 	
 	// first test for accept alert
-	@Test
+	@Test (priority = 2)
 	public void checkPromptWithAccept() {
 		driver.switchTo().alert().accept();
 		String demo = driver.findElement(By.id("demo")).getText();
-		Assert.assertTrue(demo.contains("Koky"));
+		Assert.assertTrue(demo.contains("Konstantinopolsky"));
 	}
 	
 	// second test for dismiss alert
-	@Test
+	@Test (priority = 1)
 	public void checkPromptWithDismiss() {
-		driver.switchTo().alert().dismiss();;
+		driver.switchTo().alert().dismiss();
 		String demo = driver.findElement(By.id("demo")).getText();
 		//Assert.assertTrue(!demo.contains("Konstantinopolsky"));
 		Assert.assertFalse(demo.contains("Konstantinopolsky"));

@@ -30,7 +30,7 @@ public class LoginLogoutTest {
 	// data provider for correct credentials
 	@DataProvider
 	public Object[][] dpCorrectData() {
-		return new Object[][] { new Object[] { "a", "a" }, new Object[] { "b", "b" }, };
+		return new Object[][] { new Object[] { "b", "b" }, new Object[] { "c", "c" }, };
 	}
 
 	// running before executing test method with navigating to the web page

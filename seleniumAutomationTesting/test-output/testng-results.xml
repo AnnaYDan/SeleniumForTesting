@@ -2,49 +2,49 @@
 <testng-results skipped="0" failed="1" ignored="0" total="2" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="71157" started-at="2018-04-24T19:31:57Z" finished-at="2018-04-24T19:33:08Z">
+  <suite name="Default suite" duration-ms="73745" started-at="2018-05-06T19:08:21Z" finished-at="2018-05-06T19:09:34Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="71157" started-at="2018-04-24T19:31:57Z" finished-at="2018-04-24T19:33:08Z">
+    <test name="Default test" duration-ms="73745" started-at="2018-05-06T19:08:21Z" finished-at="2018-05-06T19:09:34Z">
       <class name="testNGexamples.LoginLogoutTest">
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:testNGexamples.LoginLogoutTest@6283d8b8]" name="beforeMethod" is-config="true" duration-ms="668" started-at="2018-04-24T19:31:57Z" finished-at="2018-04-24T19:31:58Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:testNGexamples.LoginLogoutTest@6283d8b8]" name="beforeMethod" is-config="true" duration-ms="869" started-at="2018-05-06T19:08:21Z" finished-at="2018-05-06T19:08:21Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="LogintestWithCorrectCredentials(java.lang.String, java.lang.String)[pri:0, instance:testNGexamples.LoginLogoutTest@6283d8b8]" name="LogintestWithCorrectCredentials" duration-ms="3178" started-at="2018-04-24T19:31:58Z" data-provider="dpCorrectData" finished-at="2018-04-24T19:32:01Z">
+        <test-method status="PASS" signature="LogintestWithCorrectCredentials(java.lang.String, java.lang.String)[pri:0, instance:testNGexamples.LoginLogoutTest@6283d8b8]" name="LogintestWithCorrectCredentials" duration-ms="3768" started-at="2018-05-06T19:08:21Z" data-provider="dpCorrectData" finished-at="2018-05-06T19:08:25Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[a]]>
+                <![CDATA[b]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[a]]>
+                <![CDATA[b]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LogintestWithCorrectCredentials -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:testNGexamples.LoginLogoutTest@6283d8b8]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-04-24T19:32:01Z" finished-at="2018-04-24T19:32:01Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:testNGexamples.LoginLogoutTest@6283d8b8]" name="afterMethod" is-config="true" duration-ms="1" started-at="2018-05-06T19:08:25Z" finished-at="2018-05-06T19:08:25Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:testNGexamples.LoginLogoutTest@6283d8b8]" name="beforeMethod" is-config="true" duration-ms="304" started-at="2018-04-24T19:32:01Z" finished-at="2018-04-24T19:32:01Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:testNGexamples.LoginLogoutTest@6283d8b8]" name="beforeMethod" is-config="true" duration-ms="524" started-at="2018-05-06T19:08:25Z" finished-at="2018-05-06T19:08:26Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="FAIL" signature="LogintestWithCorrectCredentials(java.lang.String, java.lang.String)[pri:0, instance:testNGexamples.LoginLogoutTest@6283d8b8]" name="LogintestWithCorrectCredentials" duration-ms="66962" started-at="2018-04-24T19:32:01Z" data-provider="dpCorrectData" finished-at="2018-04-24T19:33:08Z">
+        <test-method status="FAIL" signature="LogintestWithCorrectCredentials(java.lang.String, java.lang.String)[pri:0, instance:testNGexamples.LoginLogoutTest@6283d8b8]" name="LogintestWithCorrectCredentials" duration-ms="68477" started-at="2018-05-06T19:08:26Z" data-provider="dpCorrectData" finished-at="2018-05-06T19:09:34Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[b]]>
+                <![CDATA[c]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[b]]>
+                <![CDATA[c]]>
               </value>
             </param>
           </params>
@@ -58,7 +58,7 @@ Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.1
 System info: host: 'TOSHIBA', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_144'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
 Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.36.540470 (e522d04694c7eb..., userDataDir: C:\Users\TOSHIBA\AppData\Lo...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 65.0.3325.181, webStorageEnabled: true}
-Session ID: b51d9a8cb57f9c5413bf574d7bfb4c89]]>
+Session ID: 0f3e7489ccfeb8998d541af141dee32b]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.TimeoutException: timeout
@@ -69,7 +69,7 @@ Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.1
 System info: host: 'TOSHIBA', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_144'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
 Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.36.540470 (e522d04694c7eb..., userDataDir: C:\Users\TOSHIBA\AppData\Lo...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 65.0.3325.181, webStorageEnabled: true}
-Session ID: b51d9a8cb57f9c5413bf574d7bfb4c89
+Session ID: 0f3e7489ccfeb8998d541af141dee32b
 at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -116,7 +116,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LogintestWithCorrectCredentials -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:testNGexamples.LoginLogoutTest@6283d8b8]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-04-24T19:33:08Z" finished-at="2018-04-24T19:33:08Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:testNGexamples.LoginLogoutTest@6283d8b8]" name="afterMethod" is-config="true" duration-ms="13" started-at="2018-05-06T19:09:34Z" finished-at="2018-05-06T19:09:34Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
