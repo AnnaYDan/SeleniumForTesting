@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testNGexamples.LoginLogoutTest">
+      <class name="testNGexamples.ManageAlertsTestNG">
         <methods>
-          <include name="beforeMethod"/>
+          <include name="checkPromptWithAccept"/>
           <include name="afterMethod"/>
-          <include name="LogintestWithCorrectCredentials" invocation-numbers="1"/>
+          <include name="runAlwaysBefore"/>
         </methods>
-      </class> <!-- testNGexamples.LoginLogoutTest -->
+      </class> <!-- testNGexamples.ManageAlertsTestNG -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
